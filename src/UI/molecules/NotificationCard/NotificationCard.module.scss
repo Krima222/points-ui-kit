@@ -1,0 +1,41 @@
+@mixin variant($url, $b) {
+    border: $b;
+
+    background: $url;
+}
+
+.card {
+    display: flex;
+    justify-content: space-around;
+    width: 315px;
+    padding: 16px;
+
+    border-radius: 16px;
+    gap: 12px;
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+}
+
+.inProcess {
+    border: 2px solid var(--accent-orange);
+}
+
+.rejected {
+    border: 2px solid var(--primary-red);
+}
+
+.notice {
+    border: 2px solid var(--accent-light-blue);
+}
+
+.finished {
+    border: 2px solid var(--primary-blue);
+}
+
+.inProcessWithSpecificDate {
+    border: 2px solid var(--primary-blue);
+}

@@ -1,0 +1,23 @@
+.progressBar {
+    height: 16px;
+    overflow: hidden;
+
+    border-radius: var(--radius-md);
+
+    background-color: var(--user-interface-white);
+}
+
+.progressBar__progress {
+    position: relative;
+    height: 100%;
+    overflow: hidden;
+}
+
+.progressBar__filling {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+
+    background: var(--primary-gradient);
+}

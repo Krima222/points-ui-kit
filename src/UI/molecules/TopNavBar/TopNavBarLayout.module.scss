@@ -1,0 +1,33 @@
+.topNavBarLayout {
+    display: flex;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    left: 0;
+    align-items: center;
+    height: 32px;
+    margin: -16px -16px 0;
+    padding: 12px 48px 16px 16px;
+
+    border-radius: 0 0 var(--radius-md) var(--radius-md);
+
+    background-color: var(--background-white);
+}
+
+.topNavBarLayout > *:last-child {
+    margin: 0 auto;
+}
+
+@media (min-width: 700px) {
+    .topNavBarLayout {
+        position: sticky;
+        justify-content: start;
+
+        background-color: transparent;
+    }
+
+    .topNavBarLayout > *:last-child {
+        margin: 0;
+    }
+}

@@ -1,0 +1,53 @@
+:root {
+    --font-main: inter, sans-serif;
+    --font-secondary: roboto, sans-serif;
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/Inter/Inter-Regular.woff');
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/Inter/Inter-Medium.woff');
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    src: url('/fonts/Inter/Inter-SemiBold.woff');
+}
+
+@font-face {
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/Inter/Inter-Bold.woff');
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/Roboto/Roboto-Regular.woff');
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 500;
+    src: url('/fonts/Roboto/Roboto-Medium.woff');
+}
+
+@font-face {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/Roboto/Roboto-Bold.woff');
+}

@@ -1,0 +1,8 @@
+@import './reset.css';
+@import './variables/colors.css';
+@import './variables/spacings.css';
+@import './variables/radiuses.css';
+
+body {
+    background-color: var(--blue-005);
+}

@@ -1,0 +1,1 @@
+export { ManIcon } from './ManIcon';

@@ -1,0 +1,38 @@
+.residencePermit {
+    width: 100%;
+}
+
+.residencePermit__text {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 8px;
+}
+
+.residencePermit__parameters {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+
+    padding-top: 16px;
+}
+
+.residencePermit__noIcons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.residencePermit__withIcons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+}
+
+.residencePermit__withIcon_row {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+    justify-content: center;
+}

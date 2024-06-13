@@ -1,0 +1,1 @@
+export { ResidencePermitInfo } from './ResidencePermitInfo';

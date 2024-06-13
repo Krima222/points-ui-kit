@@ -1,0 +1,102 @@
+@mixin text($fs, $lh, $fw) {
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+.text {
+    font-family: var(--font-main);
+}
+
+// VARIANTS
+
+// Headings
+
+.h1 {
+    @include text(28px, 32px, 700);
+}
+
+.h2 {
+    @include text(24px, 28px, 700);
+}
+
+.h3 {
+    @include text(20px, 24px, 600);
+}
+
+.h4 {
+    @include text(16px, 20px, 500);
+}
+
+// Text
+
+.large {
+    @include text(16px, 24px, 400);
+}
+
+.middle {
+    @include text(14px, 16px, 400);
+}
+
+.small {
+    @include text(12px, 14px, 400);
+}
+
+// Interaction
+
+.pill {
+    @include text(16px, 24px, 400);
+}
+
+.menu {
+    @include text(10px, 12px, 500);
+}
+
+.button {
+    @include text(20px, 28px, 500);
+}
+
+// COLORS
+
+.inherit {
+    color: inherit;
+}
+
+.white {
+    color: var(--txt-white);
+}
+
+.black {
+    color: var(--txt-black);
+}
+
+.gray70 {
+    color: var(--txt-gray-70);
+}
+
+.gray30 {
+    color: var(--txt-gray-30);
+}
+
+.gray20 {
+    color: var(--txt-gray-20);
+}
+
+.ligthBlue {
+    color: var(--txt-light-blue);
+}
+
+.orange {
+    color: var(--txt-orange);
+}
+
+.blue {
+    color: var(--txt-blue);
+}
+
+.primaryGradient {
+    -webkit-background-clip: text;
+    background-image: var(--primary-gradient);
+
+    color: transparent;
+}

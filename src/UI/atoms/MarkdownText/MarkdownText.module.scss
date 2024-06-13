@@ -1,0 +1,81 @@
+@mixin text($fs, $lh, $fw) {
+    font-family: var(--font-main);
+    font-size: $fs;
+    font-weight: $fw;
+    line-height: $lh;
+}
+
+.markdown {
+    &__paragraph {
+        @include text(16px, 24px, 400);
+        padding-bottom: 16px;
+    }
+
+    &__headingOne {
+        @include text(28px, 32px, 700);
+        padding-bottom: 8px;
+    }
+
+    &__headingTwo {
+        @include text(24px, 28px, 700);
+        padding-bottom: 8px;
+    }
+
+    &__headingTree {
+        @include text(20px, 24px, 600);
+        padding-bottom: 8px;
+    }
+
+    &__list {
+        @include text(16px, 20px, 500);
+        padding-bottom: 8px;
+    }
+
+    &__listUl {
+        @include text(16px, 24px, 400);
+        margin-left: 19px;
+
+        list-style-type: disc;
+    }
+
+    &__listOl {
+        @include text(16px, 24px, 400);
+        margin-left: 19px;
+
+        list-style-type: decimal;
+    }
+
+    &__em {
+        @include text(16px, 24px, 400);
+        font-style: italic;
+    }
+
+    &__strong {
+        @include text(16px, 24px, 700);
+    }
+}
+
+.markdown__select {
+    display: block;
+    position: relative;
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px;
+
+    border: none;
+    border-radius: 10px;
+    outline: none;
+
+    cursor: pointer;
+
+    @include text(16px, 24px, 400);
+}
+
+.markdown__select option {
+    padding: 0 5px;
+
+    border: none;
+
+    box-shadow: none;
+}

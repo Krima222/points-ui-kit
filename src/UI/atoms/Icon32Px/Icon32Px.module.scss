@@ -1,0 +1,56 @@
+@mixin svg-color($color) {
+    path[stroke] {
+        stroke: $color;
+    }
+
+    path[fill] {
+        fill: $color;
+    }
+}
+
+.icon {
+    flex-shrink: 0;
+    width: 32px;
+    height: 32px;
+
+    svg {
+        width: 100%;
+        height: 100%;
+    }
+}
+
+.inherit {
+    @include svg-color(currentColor);
+}
+
+.black {
+    @include svg-color(var(--user-interface-black));
+}
+
+.white {
+    @include svg-color(var(--primary-space-blue));
+}
+
+.gray90 {
+    @include svg-color(var(--user-interface-gray-90));
+}
+
+.gray70 {
+    @include svg-color(var(--user-interface-gray-70));
+}
+
+.gray30 {
+    @include svg-color(var(--user-interface-gray-30));
+}
+
+.blue {
+    @include svg-color(var(--primary-blue));
+}
+
+.red {
+    @include svg-color(var(--primary-red));
+}
+
+.primaryGradient {
+    @include svg-color(url('#gradient'));
+}

@@ -1,0 +1,28 @@
+.input__field {
+    position: absolute;
+    top: 21px;
+    left: 16px;
+
+    width: calc(100% - 30px);
+
+    background-color: var(--user-interface-white);
+
+    cursor: text;
+
+    &_withValue {
+        top: 30px;
+    }
+}
+
+.input__field:focus {
+    top: 30px;
+}
+
+.input__field_disabled {
+    background-color: var(--user-interface-gray-20);
+}
+
+.input:-webkit-autofill {
+    box-shadow: 0 0 0 50px var(--user-interface-white) inset;
+    -webkit-text-fill-color: var(--txt-black);
+}

@@ -1,0 +1,17 @@
+.aboutCountryParameter {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    padding: 12px;
+
+    border-radius: var(--radius-lg);
+
+    background-color: var(--background-white);
+}
+
+@media (width >= 700px) {
+    .aboutCountryParameter {
+        padding: 16px 12px;
+    }
+}

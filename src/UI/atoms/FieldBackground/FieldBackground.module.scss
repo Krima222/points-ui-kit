@@ -1,0 +1,46 @@
+.fieldBackground {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-md);
+}
+
+// Чтобы не тригерился на радиокнопки и чекбоксы
+
+.fieldBackground:has(input:focus-visible) {
+    outline: 2px solid var(--primary-blue);
+}
+
+.fieldBackground__main {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: var(--spacing-md);
+}
+
+.fieldBackground__main:has(input[type='radio'], input[type='checkbox']) {
+    cursor: pointer;
+}
+
+.fieldBackground__details {
+    display: flex;
+    flex-direction: column;
+    gap: var(--spacing-sm);
+}
+
+// Variants
+
+.field {
+    padding: 16px;
+
+    border-radius: var(--radius-lg);
+
+    background-color: var(--user-interface-white);
+}
+
+.subfield {
+    padding: 12px;
+
+    border-radius: var(--radius-md);
+
+    background-color: var(--primary-space-blue);
+}

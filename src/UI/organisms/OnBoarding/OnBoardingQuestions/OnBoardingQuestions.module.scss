@@ -1,0 +1,13 @@
+.onBoardingQuestions {
+    width: 100%;
+    min-height: calc(100vh - 294px);
+}
+
+@media (min-width: 700px) {
+    .onBoardingQuestions {
+        width: 541px;
+        height: calc(100vh - 276px);
+
+        margin: 0 auto;
+    }
+}

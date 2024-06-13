@@ -1,0 +1,25 @@
+.field {
+    display: flex;
+    gap: 12px;
+
+    justify-content: flex-start;
+}
+
+.field__subField {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+}
+
+.field__details {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.field__details_notification {
+    display: flex;
+    gap: 8px;
+
+    align-items: center;
+}

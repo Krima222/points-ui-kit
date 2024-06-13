@@ -1,0 +1,35 @@
+.chooseCountry {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+}
+
+.chooseCountry__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+}
+
+.chooseCountry__title {
+    text-align: center;
+}
+
+@media (width >= 700px) {
+    .chooseCountry {
+        max-width: 784px;
+        gap: 32px;
+
+        margin: 0 auto;
+    }
+
+    .chooseCountry__list {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
